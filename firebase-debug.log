@@ -1,0 +1,107 @@
+[debug] [2019-06-10T21:53:48.969Z] ----------------------------------------------------------------------
+[debug] [2019-06-10T21:53:48.973Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-10T21:53:48.973Z] CLI Version:   6.7.2
+[debug] [2019-06-10T21:53:48.973Z] Platform:      linux
+[debug] [2019-06-10T21:53:48.973Z] Node Version:  v8.10.0
+[debug] [2019-06-10T21:53:48.974Z] Time:          Mon Jun 10 2019 15:53:48 GMT-0600 (DST)
+[debug] [2019-06-10T21:53:48.974Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-10T21:53:48.994Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-10T21:53:48.995Z] > authorizing via signed-in user
+[debug] [2019-06-10T21:53:48.995Z] [iam] checking project cs260labs for permissions ["firebase.projects.get"]
+[debug] [2019-06-10T21:53:48.997Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-10T21:53:48.997Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-10T21:53:49.256Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-10T21:53:49.272Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260labs:testIamPermissions  
+
+[debug] [2019-06-10T21:53:49.730Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-10T21:53:49.737Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260labs  
+ 
+[debug] [2019-06-10T21:53:50.156Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/mnt/c/Users/Randon/Documents/BYU/CS260/Labs/Lab4_Museum/Lab4/lab-4-museum-of-ordinary-objects-calderwoodr'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-06-10T21:53:52.548Z] Fetching environment
+[debug] [2019-06-10T21:53:52.552Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/550145981620:getServerAppConfig  
+ 
+[debug] [2019-06-10T21:53:52.552Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/550145981620/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-10T21:53:52.906Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-10T21:53:52.906Z] Starting @google-cloud/functions-emulator
+[debug] [2019-06-10T21:53:53.106Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-10T21:53:55.516Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:5001/cs260labs/us-central1/app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/cs260labs/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items/1 to http://localhost:5001/cs260labs/us-central1/app for local Function app

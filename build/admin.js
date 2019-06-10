@@ -2,6 +2,7 @@ var app = new Vue({
   el: '#admin',
   data: {
     title: "",
+    description: "",
     selected:  "",
     items: [],
     addItem: null,
@@ -25,7 +26,8 @@ var app = new Vue({
         console.log("this.selected", this.selected);
         let result = await axios.post('/api/items', {
           title: this.title,
-          path: this.selected.path
+          path: this.selected.path,
+          description: this.description
         });
         this.addItem = result.data;
       } catch (error) {
@@ -49,7 +51,8 @@ var app = new Vue({
     },
     async editItem(item) {
       try {
-        console.log("items: ", this.curItem.id);
+        console.log("cutItem: ", this.curItem);
+        console.log("item: ", item);
         let response = await axios.put("/api/items/" + this.curItem.id, {item});
         return(true);     
       } catch (error) {

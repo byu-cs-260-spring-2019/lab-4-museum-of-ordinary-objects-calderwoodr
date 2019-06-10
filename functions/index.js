@@ -21,7 +21,8 @@ app.post('/api/items', async (req, res) => {
         let item = {
             id: numRecords + 1,
             title: req.body.title,
-            path: req.body.path
+            path: req.body.path,
+            description: req.body.description
         };
         console.log("item: ", item);
         itemsRef.doc(item.id.toString()).set(item);
@@ -61,7 +62,8 @@ app.put('/api/items/:id', async(req, res) => {
         console.log("got called");
         console.log("params", req.params);
         console.log("req.body: ", req.body);
-        itemsRef.doc(req.params.id).update({"title": req.body.item.title})
+        itemsRef.doc(req.params.id).update({"title": req.body.item.title});
+        itemsRef.doc(req.params.id).update({"description": req.body.item.description});
         res.send(true);
     } catch(err)
     {
